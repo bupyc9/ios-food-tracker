@@ -41,17 +41,32 @@ import UIKit
         }
         ratingButtons.removeAll()
         
+        let bundle = Bundle(for: type(of: self))
+        let filledStar = UIImage(named: "filledStar", in: bundle, compatibleWith: self.traitCollection)
+        let emptyStar = UIImage(named:"emptyStar", in: bundle, compatibleWith: self.traitCollection)
+        let highlightedStar = UIImage(named:"highlightedStar", in: bundle, compatibleWith: self.traitCollection)
+        
         for _ in 0..<starCount {
             let button = UIButton();
-            button.backgroundColor = UIColor.red;
+            
+            // Set the button images
+            button.setImage(emptyStar, for: .normal)
+            button.setImage(filledStar, for: .selected)
+            button.setImage(highlightedStar, for: .highlighted)
+            button.setImage(highlightedStar, for: [.highlighted, .selected])
+            
+            // Add constraints
             button.translatesAutoresizingMaskIntoConstraints = false;
             button.heightAnchor.constraint(equalToConstant: starSize.height).isActive = true;
             button.widthAnchor.constraint(equalToConstant: starSize.width).isActive = true;
         
+            // Setup the button action
             button.addTarget(self, action: #selector(RatingControl.ratingButtonTapped(button:)), for: .touchUpInside);
         
+            // Add the button to the stack
             addArrangedSubview(button);
             
+            // Add the new button to the rating button array
             ratingButtons.append(button);
         }
         
