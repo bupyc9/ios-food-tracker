@@ -81,16 +81,16 @@
             </objects>
             <point key="canvasLocation" x="233" y="138"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Meal Table View Controller-->
         <scene sceneID="ArO-Ox-7t9">
             <objects>
-                <tableViewController id="HeP-w2-JMH" sceneMemberID="viewController">
+                <tableViewController id="HeP-w2-JMH" customClass="MealTableViewController" customModule="FoodTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="m8D-oT-sFa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="0w0-Vc-gPD" customClass="MealTableViewCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MealTableViewCell" rowHeight="90" id="0w0-Vc-gPD" customClass="MealTableViewCell" customModule="FoodTracker" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="90"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0w0-Vc-gPD" id="GgT-qc-Ddj">
@@ -115,9 +115,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="nameLabel" destination="gfg-VQ-Lzx" id="DTc-bo-jwS"/>
-                                    <outlet property="photoImageView" destination="wUz-l8-LfU" id="sKw-Kh-5mO"/>
-                                    <outlet property="ratingControl" destination="3Cg-VK-J7T" id="u4K-XN-mgg"/>
+                                    <outlet property="nameLabel" destination="gfg-VQ-Lzx" id="hE6-5y-2Zg"/>
+                                    <outlet property="photoImageView" destination="wUz-l8-LfU" id="A65-mf-GvY"/>
+                                    <outlet property="ratingControl" destination="3Cg-VK-J7T" id="C8W-HP-sWK"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
