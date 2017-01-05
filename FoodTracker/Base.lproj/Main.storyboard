@@ -66,6 +66,7 @@
                         <outlet property="nameTextField" destination="GVK-ng-DFj" id="i40-8h-zgm"/>
                         <outlet property="photoImageView" destination="DqZ-pi-ufY" id="T6N-jf-h0R"/>
                         <outlet property="ratingControl" destination="ZqX-CQ-hYu" id="Mru-aq-MHd"/>
+                        <outlet property="saveButton" destination="bUs-vf-bCS" id="gke-Yc-2e8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

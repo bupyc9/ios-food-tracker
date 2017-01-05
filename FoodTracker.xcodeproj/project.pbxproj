@@ -87,14 +87,14 @@
 			children = (
 				93B974EB1E06C7E8007CC364 /* AppDelegate.swift */,
 				93B974ED1E06C7E8007CC364 /* MealViewController.swift */,
+				9384AB2D1E1BC99400CA31B3 /* MealTableViewController.swift */,
+				9384AB2B1E1BC5D200CA31B3 /* MealTableViewCell.swift */,
 				9384AB271E1BA84000CA31B3 /* Meal.swift */,
 				9328EC301E12BDDC00BED413 /* RatingControl.swift */,
-				9384AB2B1E1BC5D200CA31B3 /* MealTableViewCell.swift */,
 				93B974EF1E06C7E8007CC364 /* Main.storyboard */,
 				93B974F21E06C7E8007CC364 /* Assets.xcassets */,
 				93B974F41E06C7E8007CC364 /* LaunchScreen.storyboard */,
 				93B974F71E06C7E8007CC364 /* Info.plist */,
-				9384AB2D1E1BC99400CA31B3 /* MealTableViewController.swift */,
 			);
 			path = FoodTracker;
 			sourceTree = "<group>";
