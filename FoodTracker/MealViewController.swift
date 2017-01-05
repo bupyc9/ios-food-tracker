@@ -107,4 +107,8 @@ class MealViewController: UIViewController, UITextFieldDelegate,
         
         meal = Meal(name: name, photo: photo, rating: rating)
     }
+    
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
 }
